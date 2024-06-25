@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SUMAN D || Personal Portfolio</title>
+    <title>SUMAN D</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon_suman.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
     <!-- CSS 
     ============================================ -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
@@ -16,8 +16,56 @@
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
     <link rel="stylesheet" href="assets/css/vendor/aos.css">
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .btn-primary {
+            display: inline-block;
+            background-color: white; /* Set background color to white */
+            color: black !important; /* Set text color to black and ensure it's not overridden */
+            border: 2px solid black; /* Add a black border */
+        }
+
+        .btn-primary:hover {
+            background-color: white; /* Keep background color white on hover */
+            color: black !important; /* Ensure text color remains black on hover */
+            border-color: black; /* Keep the border color black on hover */
+            animation: animate__bounce 2s; /* Apply bounce animation */
+        }
+        .animated-image img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .animated-image:hover img {
+            transform: scale(1.1);
+        }
+        .animated-icons img {
+            animation: scaleUp 0.3s ease-in-out forwards;
+        }
+
+        @keyframes scaleUp {
+            0% {
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animated-icons img:hover {
+            animation: zoomIn 0.5s ease-in-out forwards;
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
 </head>
 
 <body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
@@ -47,10 +95,11 @@
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
-                            <li class="nav-item"><a class="btn btn-primary" href="https://drive.google.com/file/d/18MD09aEVNzKg7j2F7oD82FEkoz261NbP/view?usp=sharing">Download My CV</a></li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary animate__animated animate__bounce" href="https://drive.google.com/file/d/18MD09aEVNzKg7j2F7oD82FEkoz261NbP/view?usp=sharing">Download My CV</a>
+                            </li>
                         </ul>
-                        <!-- End Mainmanu Nav -->
-                    </nav>                    
+                    </nav>                                       
                     <!-- Start Header Right  -->
                     <div class="header-right">
                         <!-- <a class="rn-btn" target="_blank" href="../../checkout/83025947/create_account.html?license=regular"><span>BUY NOW</span></a> -->
@@ -135,12 +184,12 @@
                         <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
                             <div class="content">
                                 <div class="inner">
-                                    <span class="subtitle">Welcome to my portfolio, where technology meets innovation to showcase my skills and expertise</span>
+                                    <span class="subtitle">Discover My Journey, Blending Technology and Creativity!</span>
                                     <h1 class="title">Hi, I’m <span>SUMAN</span><br>
                                         <span class="header-caption" id="page-top">
                                             <!-- type headline start-->
                                             <span class="cd-headline clip is-full-width">
-                                                <span>A </span>
+                                                <!-- <span></span> -->
                                         <!-- ROTATING TEXT -->
                                         <span class="cd-words-wrapper">
                                                     <b class="is-visible">Software Test Engineer</b>
@@ -177,25 +226,25 @@
                                     <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
                                         <div class="skill-share-inner">
                                             <span class="title">best skill on</span>
-                                            <ul class="skill-share d-flex liststyle">
-                                                <li><img src="assets/images/icons/python (1).png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/aws.png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/docker.png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/kubernets.png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/linux.png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/ansible.png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/api.png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/bug.png" alt="Icons Images"></li>
+                                            <ul class="skill-share d-flex liststyle animated-icons">
+                                                <li><img src="assets/images/icons/python (1).png" alt="Python"></li>
+                                                <li><img src="assets/images/icons/aws.png" alt="AWS"></li>
+                                                <li><img src="assets/images/icons/docker.png" alt="Docker"></li>
+                                                <li><img src="assets/images/icons/kubernets.png" alt="Kubernetes"></li>
+                                                <li><img src="assets/images/icons/linux.png" alt="Linux"></li>
+                                                <li><img src="assets/images/icons/ansible.png" alt="Ansible"></li>
+                                                <li><img src="assets/images/icons/api.png" alt="API"></li>
+                                                <li><img src="assets/images/icons/bug.png" alt="Debugging"></li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
 
                         <div class="order-1 order-lg-2 col-lg-5">
                             <div class="thumbnail">
-                                <div class="inner">
+                                <div class="inner animated-image">
                                     <img src="assets/images/favicon_suman.png" alt="Personal Portfolio Images">
                                 </div>
                             </div>
@@ -212,8 +261,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
-                            <span class="subtitle">Features</span>
-                            <h2 class="title">What I Do</h2>
+                            <span class="subtitle">Highlights</span>
+                            <h2 class="title">Core Competencies</h2>
                         </div>
                     </div>
                 </div>
@@ -539,8 +588,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center">
-                            <span class="subtitle">1 + Years of Experience</span>
-                            <h2 class="title">My Resume</h2>
+                            <span class="subtitle">1.5 + Years of Experience</span>
+                            <h2 class="title">Career Snapshot</h2>
                         </div>
                     </div>
                 </div>
@@ -592,19 +641,19 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <!-- <div class="resume-single-list">
+                                                    <div class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
-                                                                    <h4> ICS</h4>
-                                                                    <span>502 Model College (2011 - 2013)</span>
+                                                                    <h4>Intermediate</h4>
+                                                                    <span>Narayan PU Collage (2016 - 2018)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
-                                                                    <span>4.50/5</span>
+                                                                    <span>6.2/10</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div> -->
+                                                    </div>
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
@@ -645,7 +694,7 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>Software Test Engineer</h4>
-                                                                    <span>Adcuratio Media Inc (2023 JUNE- present)</span>
+                                                                    <span>Adcuratio Media Inc (2023 JUNE- Present)</span>
                                                                 </div>
                                                                 <!-- <div class="date-of-time">
                                                                     <span>4.90/5</span>
@@ -1100,51 +1149,49 @@
                     <div data-aos-delay="600" class="col-lg-7 contact-input">
                         <div class="contact-form-wrapper">
                             <div class="introduce">
-
                                 <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="mail.php">
-
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="contact-name">Your Name</label>
                                             <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text">
                                         </div>
                                     </div>
-
+                                
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="contact-phone">Phone Number</label>
                                             <input class="form-control" name="contact-phone" id="contact-phone" type="text">
                                         </div>
                                     </div>
-
+                                
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-email">Email</label>
                                             <input class="form-control form-control-sm" id="contact-email" name="contact-email" type="email">
                                         </div>
                                     </div>
-
+                                
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="subject">subject</label>
+                                            <label for="subject">Subject</label>
                                             <input class="form-control form-control-sm" id="subject" name="subject" type="text">
                                         </div>
                                     </div>
-
+                                
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-message">Your Message</label>
-                                            <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+                                            <textarea name="contact-message" id="contact-message" class="form-control" cols="30" rows="10"></textarea>
                                         </div>
                                     </div>
-
+                                
                                     <div class="col-lg-12">
                                         <button name="submit" type="submit" id="submit" class="rn-btn">
                                             <span>SEND MESSAGE</span>
                                             <i data-feather="arrow-right"></i>
                                         </button>
                                     </div>
-                                </form>
+                                </form>                                
                             </div>
                         </div>
                     </div>
@@ -2382,6 +2429,11 @@
     <script src="assets/js/vendor/aos.js"></script>
     <script src="assets/js/vendor/particles.js"></script>
     <!-- main JS -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector('.description').classList.add('visible');
+    });
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 
